@@ -23,6 +23,48 @@ li {
 }
 
 
+h1,
+h2,
+h3,
+ul,
+p {
+    margin: 0;
+}
+
+
+.container {
+    width: 1200px;
+    padding: 0 15px;
+    margin: auto;
+}
+
+.head {
+    border-bottom: 1px solid #ECECEC;
+}
+
+.head-nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link,
+.nav-contact {
+    display: flex;
+}
+
+
+.nav-contact .item + .item {
+    margin-left: 50px;
+}
+
+.nav-link .item + .item {
+    margin-left: 50px;
+}
+
+.nav-contact {
+    margin-left: auto;
+}
+
 .nav {
     color: var(--secondary-text-color);
     font-weight: 500;
@@ -82,6 +124,7 @@ li {
     color: var(--white-text-color);
     background-color: var(--alternative-text-color);
     cursor: pointer;
+    border-radius: 4px;
 }
 
 
@@ -186,6 +229,7 @@ link:focus {
     line-height: 1.62;
     letter-spacing: 0.03em;
     cursor: pointer;
+    border-radius: 4px;
 }
 
 
