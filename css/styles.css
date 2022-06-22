@@ -299,6 +299,7 @@ ul {
 }
 
 .team-list .teammate {
+    background-color: var(--white-text-color);
     width: 270px;
     margin-right: 30px;
     padding-bottom: 30px;
@@ -350,13 +351,10 @@ ul {
 }
 
 
-.footer .adress.link {
-    margin-top: 20px;
-}
-
-.footer .contact.link {
+.footer-adress li:not(:first-child) {
     margin-top: 9px;
 }
+
 
 .link {
     text-decoration: none;
@@ -366,6 +364,7 @@ ul {
 
 .footer-adress {
     font-style: normal;
+    margin-top: 20px;
 }
 
 
@@ -416,7 +415,8 @@ link:focus {
 
 
 .filter-button:hover,
-.filter-button:focus {
+.filter-button:focus,
+.active {
     color: var(--white-text-color);
     background-color: var(--alternative-text-color);
 }
@@ -430,7 +430,6 @@ link:focus {
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--secondary-text-color);
-    margin-top: 20px;
 }
 
 
@@ -457,14 +456,16 @@ link:focus {
     width: 370px;
     margin-right: 30px;
     margin-bottom: 30px;
+}
+
+.text-project {
+    padding: 20px 24px;
     border: 1px solid #EEEEEE;
-    padding-bottom: 20px;
-    padding-left: 24px;
-    padding-right: 24px;
+    border-top: none;
 }
 
 .link img {
-    margin-left: -24px;
+    display: block;
 }
 
 .work-list .item:nth-child(3n) {
@@ -476,5 +477,5 @@ link:focus {
 }
 
 .work-list .link {
-    display: inline-block;
+    display: block;
 }
